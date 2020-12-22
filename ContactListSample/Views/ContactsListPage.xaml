@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ctrls="clr-namespace:ContactListSample.CustomControls"
+             xmlns:local="clr-namespace:ContactListSample.ViewModels"
+              
+             x:Class="ContactListSample.Views.ContactsListPage"
+             Title="{Binding Title}"
+             >
+
+
+    <ContentPage.ToolbarItems>
+
+        <!--<ToolbarItem Text="Select All"
+                     Priority="0"
+                     Order="Primary"
+                     Command="{Binding SelectContactCommand}" />-->
+                                                           
+
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+
+
+    
+   <StackLayout  VerticalOptions="FillAndExpand"
+                 Spacing="0" x:Name="stackPanel">
+
+           
+            <SearchBar x:Name="filterText"
+                       HeightRequest="40"
+                       TextColor="#533F95"
+                       Text="{Binding SearchText}"
+                       CancelButtonColor="#533F95"
+                       Placeholder="Search"
+                       PlaceholderColor="#533F95"
+                       BackgroundColor="White"                 
+                       />
+            
+            
+            <StackLayout HorizontalOptions="Center"
+                         VerticalOptions="EndAndExpand"
+                         BackgroundColor="White"
+                         x:Name="myselectAll"
+                         IsVisible="true">
+                <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                                                                                                        
+                                    </Grid.ColumnDefinitions>
+
+                              
+                                 <Label Grid.Column="1" Grid.Row="0"
+                                        Text="Tout selectionné"
+                                        TextColor="Black"
+                                        HorizontalOptions="End"
+                                        FontAttributes="Bold"
+                                        FontSize="15"/>
+                    
+                                <StackLayout Grid.Column="2"
+                                             Grid.Row="0" >
+
+                                   <Switch IsToggled="{Binding SwithFive}"
+                                           HorizontalOptions="End"/>
+
+                                </StackLayout>
+                               
+
+                           
+
+
+
+                               <!-- <Button Text="Select All"
+                                        TextColor="Black"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="End"
+                                        Grid.Column="1"
+                                        Grid.Row="0"
+                                        FontAttributes="Bold"
+                                        
+
+                                        x:Name="selectAll"
+
+                                        Command="{Binding SelectContactAllCommand}"/>
+
+                                <Button Text="Deselect All"
+                                        TextColor="Black"
+                                        HorizontalOptions="StartAndExpand"
+                                        VerticalOptions="Start"
+                                         Grid.Column="0"
+                                        Grid.Row="0"
+                                        
+                        
+                                        FontAttributes="Bold"
+
+                                        x:Name="deselectAll"
+
+                                        Command="{Binding DeselectContactAllCommand}"/>-->
+               </Grid>
+            </StackLayout>
+       
+            <ListView   ItemsSource="{Binding FilteredContacts}"
+
+                        x:Name="myListView"
+                        BackgroundColor="Orange"
+                        SelectedItem="{Binding SelectedContact, Mode=TwoWay}" 
+                        SeparatorColor="Silver"
+                        HasUnevenRows="true">
+
+                                                      
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                    
+                      <ViewCell>
+
+                          <Grid>
+
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        
+                                        <ColumnDefinition Width="*" />
+                                                                                                                        
+                                    </Grid.ColumnDefinitions>
+
+                                
+                                    <StackLayout Grid.Row="0" Padding="10" Orientation="Horizontal" VerticalOptions="Center">
+                                          
+                                            <Image
+                                                       Aspect="AspectFill"
+                                                       WidthRequest="90"
+                                                       HeightRequest="90"
+                                       
+                                                       Margin="0,0,0,0"
+                                                       Grid.Column="0"
+                                                       Grid.Row="0"
+                                                       
+                                                       Source="iconcontact.png"/>
+
+                                            <StackLayout  HorizontalOptions="FillAndExpand"
+                                                          VerticalOptions="Center"
+                                                          Margin="25,0,5,0"
+                                                           Grid.Column="1"
+                                                           Grid.Row="0">
+
+                                                <Label Text="{Binding Name}"
+                                                           FontAttributes="Bold"
+                                                           TextColor="Black"
+                                                           VerticalOptions="Center"
+                                                           FontSize="24"
+                                                          
+                                                           />                                        
+
+                                                <Label Text="{Binding PhoneNumbers[0]}"
+                                                           FontSize="15"
+                                                           TextColor="Black"
+                                                          
+                                                           />
+                                                <Label Text="{Binding PhoneNumbers[1]}"
+                                                           FontSize="15"
+                                                           TextColor="Black"
+                                                          
+                                                           />
+
+                                            </StackLayout>
+
+                                            <StackLayout Grid.Column="3"
+                                                         Grid.Row="0"
+                                                         HorizontalOptions="End"
+                                                         VerticalOptions="Center"
+                                                         HeightRequest="30"
+                                                         WidthRequest="30">
+
+                                                <ctrls:CheckBox x:Name="cbUS"
+
+                                                              
+                                                            IsChecked="{Binding IsSelected}"
+                                                            
+
+                                                            Margin="0,0,0,0"                                            
+                                                            BorderImageSource="check_box_border.png"
+                                                            CheckedBackgroundImageSource="checked_bg.png"
+                                                            CheckmarkImageSource="check_mark.png"                                                    
+
+                                                            
+                                                            />
+                                            </StackLayout>
+                           
+                                    </StackLayout>
+                            </Grid>
+
+                        </ViewCell>
+                     </DataTemplate>
+                </ListView.ItemTemplate>
+          
+            
+        </ListView>
+
+
+        <StackLayout Padding="20">
+
+            <Button Text="VALIDER"
+                    TextColor="Black"
+                    
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding NavigationCommand}" 
+                    BackgroundColor="Orange"
+                     />
+
+        </StackLayout>
+
+
+    </StackLayout>
+
+ </ScrollView>
+
+</ContentPage>

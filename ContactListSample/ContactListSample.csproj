@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.468" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    <PackageReference Include="Xamarin.Forms.Contacts" Version="1.0.5" />
+    <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="RelayCommand" Version="1.0.2" />
+    <PackageReference Include="Prism.Core" Version="8.0.0.1909" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Microsoft.JSInterop" Version="0.5.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="CustomControls\" />
+    <Folder Include="Views\" />
+    <Folder Include="Data\" />
+    <Folder Include="extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\11.0.2.0\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Java.Interop, Version=0.1.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065" />
+  </ItemGroup>
+</Project>

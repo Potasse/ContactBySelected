@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "l8LIlxHsZ6KWCc/jiD7SHl5rLbh/YraNPMrcRWlI0CEDQYGu4zi1D6imZtarGz+L4P9V7pUng9GmMD5YjgzcfQ==",
+  "success": true,
+  "projectFilePath": "/Users/macbk2016/Projects/ContactListSample/ContactListSample/ContactListSample.csproj",
+  "expectedPackageFiles": [
+    "/Users/macbk2016/.nuget/packages/acr.userdialogs/7.1.0.468/acr.userdialogs.7.1.0.468.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/microsoft.jsinterop/0.5.1/microsoft.jsinterop.0.5.1.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/microsoft.typescript.msbuild/2.9.2/microsoft.typescript.msbuild.2.9.2.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/mvvmlight/5.4.1.1/mvvmlight.5.4.1.1.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/plugin.permissions/6.0.1/plugin.permissions.6.0.1.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/prism.core/8.0.0.1909/prism.core.8.0.0.1909.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/relaycommand/1.0.2/relaycommand.1.0.2.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/sqlite-net-pcl/1.7.335/sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/sqlitepclraw.bundle_green/2.0.3/sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/sqlitepclraw.core/2.0.3/sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.3/sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.3/sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512",
+    "/Users/macbk2016/.nuget/packages/xamarin.forms.contacts/1.0.5/xamarin.forms.contacts.1.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

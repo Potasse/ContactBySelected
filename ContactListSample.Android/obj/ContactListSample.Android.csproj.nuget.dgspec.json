@@ -1,0 +1,181 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/macbk2016/Projects/ContactListSample/ContactListSample.Android/ContactListSample.Android.csproj": {}
+  },
+  "projects": {
+    "/Users/macbk2016/Projects/ContactListSample/ContactListSample.Android/ContactListSample.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbk2016/Projects/ContactListSample/ContactListSample.Android/ContactListSample.Android.csproj",
+        "projectName": "ContactListSample.Android",
+        "projectPath": "/Users/macbk2016/Projects/ContactListSample/ContactListSample.Android/ContactListSample.Android.csproj",
+        "packagesPath": "/Users/macbk2016/.nuget/packages/",
+        "outputPath": "/Users/macbk2016/Projects/ContactListSample/ContactListSample.Android/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/macbk2016/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "/Users/macbk2016/Projects/ContactListSample/ContactListSample/ContactListSample.csproj": {
+                "projectPath": "/Users/macbk2016/Projects/ContactListSample/ContactListSample/ContactListSample.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.468, )"
+            },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[0.5.1, )"
+            },
+            "MvvmLight": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "Plugin.CurrentActivity": {
+              "target": "Package",
+              "version": "[2.1.0.4, )"
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "RelayCommand": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.6.0.1141, )"
+            },
+            "Xamarin.Forms.Contacts": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          }
+        }
+      }
+    },
+    "/Users/macbk2016/Projects/ContactListSample/ContactListSample/ContactListSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/macbk2016/Projects/ContactListSample/ContactListSample/ContactListSample.csproj",
+        "projectName": "ContactListSample",
+        "projectPath": "/Users/macbk2016/Projects/ContactListSample/ContactListSample/ContactListSample.csproj",
+        "packagesPath": "/Users/macbk2016/.nuget/packages/",
+        "outputPath": "/Users/macbk2016/Projects/ContactListSample/ContactListSample/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/macbk2016/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Acr.UserDialogs": {
+              "target": "Package",
+              "version": "[7.1.0.468, )"
+            },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[0.5.1, )"
+            },
+            "MvvmLight": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "RelayCommand": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.6.0.1141, )"
+            },
+            "Xamarin.Forms.Contacts": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.7.335, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

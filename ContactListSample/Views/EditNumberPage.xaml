@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ContactListSample.Views.EditNumberPage"
+             BackgroundColor="Orange">
+
+
+    <ContentPage.Content>
+
+
+        <StackLayout BackgroundColor="Orange"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="0">
+
+                <Label  x:Name="nbrEditContact"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="Le nombre de contact modifié est : x" />
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+
+</ContentPage>

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:ctrls="clr-namespace:ContactListSample.CustomControls"
+             x:Class="ContactListSample.Views.SelectedContactsPage"
+             Title="Contacts selectionnnés">
+
+    
+    <StackLayout x:Name="stackPanel"
+                 VerticalOptions="FillAndExpand"
+                 Spacing="0">
+
+
+        <Label x:Name="nbrSelect"
+
+               Text="Le nombre de contact selectionné est : x"
+               Margin="0,0,0,5"
+               TextColor="White"
+               BackgroundColor="Black"
+               FontAttributes="Bold"
+               FontSize="20"
+               HorizontalTextAlignment="Center"/>
+
+        <ListView x:Name="myListView"
+                  BackgroundColor="Orange"
+                  SeparatorColor="Silver"
+                  HasUnevenRows="true" 
+                  ItemsSource="{Binding SelectedContactList}">
+
+
+            <ListView.ItemTemplate>  
+                <DataTemplate>  
+                    <ViewCell>
+
+                        <StackLayout Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
+
+                    <Grid>
+
+                                    <Grid.RowDefinitions>
+
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto"/>
+
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                                                                                                        
+                                    </Grid.ColumnDefinitions>
+
+                           <Label Text="{Binding Name}"
+                                   
+                            VerticalTextAlignment="Center"     
+                            TextColor="Black"     
+                            FontSize="20"
+                            FontAttributes="Bold"
+                                  Grid.Row="0"
+                                  Grid.Column="0"/>
+
+                            <Label Text="{Binding PhoneNumbers[0]}"
+                            
+                            VerticalTextAlignment="Center"     
+                            TextColor="Black"     
+                            FontSize="20"
+                            FontAttributes="Bold"
+                                   Grid.Row="0"
+                                   Grid.Column="1"/>
+
+                            <Label Text="{Binding PhoneNumbers[1]}"
+                            
+                            VerticalTextAlignment="Center"     
+                            TextColor="Black"     
+                            FontSize="20"
+                            FontAttributes="Bold"
+                                   Grid.Row="1"
+                                   Grid.Column="1"/>
+
+                          
+
+                            <ctrls:CheckBox                                                              
+                                            IsChecked="{Binding IsSelected}"
+                                            Grid.Row="0"
+                                            Grid.Column="2"
+                                            Margin="0,0,0,0"                                            
+                                            BorderImageSource="check_box_border.png"
+                                            CheckedBackgroundImageSource="checked_bg.png"
+                                            CheckmarkImageSource="check_mark.png"                                              
+                                                                                                       
+                                                            />
+
+                            <!--<Label Text="{Binding PhoneNumbers[3]}"
+                            
+                            VerticalTextAlignment="Center"     
+                            TextColor="Black"     
+                            FontSize="20"
+                            FontAttributes="Bold"/>-->
+                         
+                        
+
+                    </Grid>
+                            
+                        </StackLayout>
+
+                    </ViewCell>  
+                </DataTemplate>  
+            </ListView.ItemTemplate>
+            
+        </ListView>
+
+        <StackLayout Padding="20">
+
+            <Button Text="VALIDER"
+                    TextColor="Black"
+                    
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding NavigationCommandEdit}" 
+                    BackgroundColor="Orange"
+                     />
+
+        </StackLayout>
+
+        
+        <!-- <StackLayout Padding="20">
+
+             <Button Text="VALIDER"
+                    WidthRequest="130"
+                    FontSize="15"
+                    FontAttributes="Bold"
+                    Margin="15,20,10,0"
+                    BackgroundColor="Orange"
+                    />
+
+        </StackLayout>-->
+
+    </StackLayout>  
+
+
+</ContentPage>
